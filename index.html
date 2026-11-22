@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Defensa del anteproyecto · Confianza en IA generativa</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!--
+  CÓMO EDITAR
+  · Cada <section class="slide"> es una diapositiva, en el orden en que aparecen.
+  · data-section y data-speaker arman la regla de progreso del pie (se genera sola).
+  · Lo que va a decir cada uno está en <aside class="notes">: no se ve en la
+    presentación, solo en el modo presentador (tecla P).
+  · El lienzo mide 1920 × 1080 px. Si agregan texto, revisen que no se pase del pie.
+-->
+
+<main class="stage" id="stage">
+
+  <!-- 1 · Portada ====================================================== -->
+  <section class="slide dark cover" data-section="Propósito" data-speaker="Jorge">
+    <p class="eyebrow rise">Metodología de la investigación · Defensa del anteproyecto</p>
+    <h1 class="rise" style="--i:1">Factores asociados a la <em>confianza</em> de estudiantes y egresados de Sistemas en Uruguay en los asistentes de inteligencia artificial generativa</h1>
+    <div class="grow"></div>
+    <div class="escala rise" style="--i:2" aria-hidden="true">
+      <span class="zona izq">Confiar de menos</span>
+      <span class="zona cen">Confianza calibrada</span>
+      <span class="zona der">Confiar de más</span>
+      <div class="marcas"></div>
+      <div class="aguja"></div>
+    </div>
+    <div class="meta rise" style="--i:3">
+      <div>
+        <p class="who">Jorge Pacheco · Rodrigo Guerra · Juan Manuel Fernández</p>
+        <p>Docente: Gerardo Matturro</p>
+      </div>
+    </div>
+    <aside class="notes" data-time="0:00 – 0:20">Buenas. Somos Jorge, Rodrigo y Juan Manuel, y les vamos a presentar nuestro anteproyecto sobre la confianza de estudiantes y egresados de Sistemas en Uruguay en los asistentes de inteligencia artificial generativa. Yo voy a contar el propósito y el objetivo general, Rodrigo los objetivos específicos y las hipótesis, y Juan Manuel el diseño metodológico.</aside>
+  </section>
+
+  <!-- 2 · El problema ================================================== -->
+  <section class="slide" data-section="Propósito" data-speaker="Jorge">
+    <p class="eyebrow">Propósito · El problema</p>
+    <h2>Usar los asistentes de IA no es lo mismo que confiar en ellos</h2>
+    <div class="barras">
+      <div class="barra rise" style="--i:0">
+        <div class="cifra">82,8<small> %</small></div>
+        <div>
+          <div class="pista"><div class="valor" style="--w:82.8%"></div></div>
+          <p>usa herramientas de IA: solo el 17,2 % dice no usarlas.</p>
+        </div>
+      </div>
+      <div class="barra b rise" style="--i:2">
+        <div class="cifra">6,6<small> %</small></div>
+        <div>
+          <div class="pista"><div class="valor" style="--w:6.6%"></div></div>
+          <p>está dispuesto a confiar en la IA para decisiones importantes.</p>
+        </div>
+      </div>
+    </div>
+    <p class="remate rise" style="--i:4">Casi la mitad confía en la IA <b>solo cuando puede verificar</b> lo que produce.</p>
+    <p class="source">Fuente: Stack Overflow, 2026 Developer Survey, más de 30.000 respuestas de 169 países</p>
+    <aside class="notes" data-time="0:20 – 1:05">Los asistentes de IA generativa, como ChatGPT o Copilot, ya son parte del estudio y del trabajo en Sistemas. En la encuesta de Stack Overflow de este año, publicada en octubre con más de 30.000 respuestas, solo el 17 % dijo que no usa herramientas de IA. Pero usarlas no es lo mismo que confiar en ellas: casi la mitad confía solo cuando puede verificar lo que producen, y apenas un 6,6 % confiaría en la IA para decisiones importantes. Cada vez que el asistente propone un código o una explicación, el usuario decide si lo acepta, lo revisa o lo descarta, y en esa decisión pesa cuánto confía en la herramienta.</aside>
+  </section>
+
+  <!-- 3 · Calibración ================================================== -->
+  <section class="slide" data-section="Propósito" data-speaker="Jorge">
+    <p class="eyebrow">Propósito · Por qué importa</p>
+    <h2>Lo importante es que la confianza esté calibrada</h2>
+    <p class="cita rise">Confianza: <span class="q">«la actitud de que un agente ayudará a alcanzar los objetivos de una persona en una situación de incertidumbre y vulnerabilidad».</span></p>
+    <div class="zonas-regla rise" style="--i:1" aria-hidden="true"></div>
+    <div class="zonas rise" style="--i:1">
+      <div>
+        <p class="tag">Desconfianza</p>
+        <h3>Confiar de menos</h3>
+        <p class="txt sm">Se deja de lado una herramienta que podía ser útil.</p>
+      </div>
+      <div class="ok">
+        <p class="tag">Confianza calibrada</p>
+        <h3>Confiar lo justo</h3>
+        <p class="txt sm">La confianza se ajusta a lo que el asistente realmente puede hacer.</p>
+      </div>
+      <div>
+        <p class="tag">Exceso de confianza</p>
+        <h3>Confiar de más</h3>
+        <p class="txt sm">Se aceptan respuestas o código incorrectos sin revisarlos.</p>
+      </div>
+    </div>
+    <p class="source">Definición y calibración: Lee y See (2004)</p>
+    <aside class="notes" data-time="1:05 – 1:45">Partimos de la definición de Lee y See: la confianza es una actitud, la expectativa de que el sistema nos va a ayudar en una situación donde no sabemos si la respuesta es correcta. Lo que importa no es que la confianza sea alta, sino que esté calibrada, o sea que se ajuste a lo que el sistema realmente puede hacer. Si confiamos de más, aceptamos respuestas incorrectas sin revisarlas; si confiamos de menos, desaprovechamos una herramienta útil. Para poder ayudar a calibrarla, primero hay que saber de qué depende.</aside>
+  </section>
+
+  <!-- 4 · El vacío ===================================================== -->
+  <section class="slide alt" data-section="Propósito" data-speaker="Jorge">
+    <p class="eyebrow">Propósito · El vacío</p>
+    <h2>Qué falta saber</h2>
+    <div class="hallazgos">
+      <div class="hallazgo rise" style="--i:0"><span class="n">01</span><p>Los modelos sobre los factores de la confianza se construyeron con sistemas anteriores a la IA generativa.</p></div>
+      <div class="hallazgo rise" style="--i:1"><span class="n">02</span><p>Los estudios recientes se centran en desarrolladores de grandes empresas o usan la confianza para explicar la adopción.</p></div>
+      <div class="hallazgo rise" style="--i:2"><span class="n">03</span><p>En estudiantes, se pide entender mejor qué factores afectan la confianza. En Uruguay no encontramos estudios.</p></div>
+    </div>
+    <div class="proposito rise" style="--i:4">
+      <span class="tag">Propósito</span>
+      <p>Aportar conocimiento sobre qué factores se asocian a la confianza de estudiantes y egresados de Sistemas en Uruguay en los asistentes de IA generativa.</p>
+    </div>
+    <p class="source">Hoff y Bashir (2015) · Choudhuri et al. (2025) · Amoozadeh et al. (2024) · 9 artículos de Scopus (Timbó)</p>
+    <aside class="notes" data-time="1:45 – 2:30">Hicimos la búsqueda bibliográfica en Scopus a través de Timbó y encontramos tres cosas. Primero, los modelos clásicos sobre qué influye en la confianza, como el de Hoff y Bashir, se armaron con sistemas anteriores a la IA generativa. Segundo, los estudios recientes se centran en desarrolladores de empresas como Google o Microsoft, o usan la confianza para explicar por qué se adopta una herramienta, no al revés. Tercero, el estudio con estudiantes de Amoozadeh termina pidiendo entender qué factores afectan la confianza, y en Uruguay no encontramos nada. De ahí sale nuestro propósito.</aside>
+  </section>
+
+  <!-- 5 · Objetivo general ============================================= -->
+  <section class="slide accent objetivo" data-section="Propósito" data-speaker="Jorge">
+    <p class="eyebrow rise">Objetivo general</p>
+    <p class="frase rise" style="--i:1">Analizar los factores asociados a la confianza que estudiantes y egresados de carreras de Sistemas en Uruguay depositan en los asistentes de inteligencia artificial generativa, considerando la <u>exactitud percibida</u>, la <u>explicabilidad percibida</u>, el <u>conocimiento previo</u> y la <u>reputación de la herramienta</u>.</p>
+    <aside class="notes" data-time="2:30 – 3:00">Nuestro objetivo general es analizar los factores asociados a la confianza que estudiantes y egresados de Sistemas en Uruguay depositan en los asistentes de IA generativa, considerando cuatro factores: la exactitud percibida, la explicabilidad percibida, el conocimiento previo y la reputación de la herramienta. Hablamos de factores "asociados" y no de factores que "influyen" porque el estudio es correlacional, y por eso también cambiamos el título. Ahora Rodrigo va a contar cómo bajamos esto a objetivos específicos.</aside>
+  </section>
+
+  <!-- 6 · Objetivos específicos ======================================== -->
+  <section class="slide" data-section="Objetivos e hipótesis" data-speaker="Rodrigo">
+    <p class="eyebrow">Objetivos específicos</p>
+    <h2>Tres objetivos, uno por cada componente del estudio</h2>
+    <div class="tres">
+      <div class="rise" style="--i:0">
+        <p class="tag">OE1 · Descriptivo</p>
+        <h3>Describir</h3>
+        <p class="txt sm">el nivel de confianza que estudiantes y egresados de Sistemas manifiestan hacia los asistentes de IA generativa que usan.</p>
+      </div>
+      <div class="foco rise" style="--i:1">
+        <p class="tag">OE2 · Correlacional</p>
+        <h3>Determinar</h3>
+        <p class="txt sm">la relación entre cada uno de los cuatro factores y el nivel de confianza en estos asistentes.</p>
+      </div>
+      <div class="rise" style="--i:2">
+        <p class="tag">OE3 · Comparativo</p>
+        <h3>Comparar</h3>
+        <p class="txt sm">el nivel de confianza en los asistentes de IA generativa entre estudiantes y egresados.</p>
+      </div>
+    </div>
+    <div class="pregunta rise" style="--i:4">
+      <p><b>Pregunta general:</b> ¿qué relación existe entre la exactitud percibida, la explicabilidad percibida, el conocimiento previo y la reputación de la herramienta, y la confianza en los asistentes de IA generativa?</p>
+    </div>
+    <p class="source">OE1: describe la confianza · OE2: responde la pregunta general · OE3: compara estudiantes y egresados</p>
+    <aside class="notes" data-time="3:00 – 4:00">El objetivo general se concreta en tres objetivos específicos. Primero, describimos el nivel de confianza de estudiantes y egresados. Segundo, analizamos cómo se relacionan con esa confianza cuatro factores: la exactitud percibida, la explicabilidad, el conocimiento previo y la reputación de la herramienta. Este segundo objetivo responde la pregunta general del estudio. Tercero, comparamos el nivel de confianza entre estudiantes y egresados. Así cubrimos una parte descriptiva, una correlacional y una comparativa, sin plantear que esos factores causen la confianza.</aside>
+  </section>
+
+  <!-- 7 · Factores ===================================================== -->
+  <section class="slide alt" data-section="Objetivos e hipótesis" data-speaker="Rodrigo">
+    <p class="eyebrow">Factores estudiados</p>
+    <h2>Cuatro factores, ubicados en el modelo de Hoff y Bashir</h2>
+    <div class="cuatro">
+      <div class="ficha rise" style="--i:0"><span class="n">01</span><h3>Exactitud percibida</h3><p class="txt sm">Desempeño del sistema: si funciona de forma correcta y confiable.</p></div>
+      <div class="ficha rise" style="--i:1"><span class="n">02</span><h3>Explicabilidad percibida</h3><p class="txt sm">Transparencia: si se entiende por qué responde lo que responde.</p></div>
+      <div class="ficha rise" style="--i:2"><span class="n">03</span><h3>Conocimiento previo</h3><p class="txt sm">Familiaridad con estas herramientas y experiencia en desarrollo.</p></div>
+      <div class="ficha rise" style="--i:3"><span class="n">04</span><h3>Reputación percibida</h3><p class="txt sm">Cómo se valora la herramienta en el entorno y en las comunidades.</p></div>
+    </div>
+    <div class="fuera rise" style="--i:5">
+      <span class="tag">Fuera del estudio</span>
+      <p><b>Tipo de decisión y consecuencias del error.</b> Son situacionales: dependen de la tarea y sus riesgos, no de rasgos estables del usuario. Estudiarlos exige presentar escenarios distintos, algo cercano a un experimento. Quedan como trabajo futuro.</p>
+    </div>
+    <p class="source">Hoff y Bashir (2015): confianza disposicional, situacional y aprendida</p>
+    <aside class="notes" data-time="4:00 – 5:00">El modelo de Hoff y Bashir nos ayuda a ordenar qué puede influir en la confianza. Distingue tres cosas: la disposición general de una persona a confiar, la situación en la que usa el sistema y la experiencia previa que tiene con ese sistema. En este estudio nos concentramos en cuatro factores que podemos consultar en una encuesta: si la herramienta suele dar respuestas correctas, si se entiende por qué responde lo que responde, qué tan familiar le resulta el asistente, qué experiencia tiene usando IA y cuántos años lleva desarrollando software, y qué reputación tiene la herramienta. Dejamos fuera el tipo de tarea y las consecuencias de equivocarse, porque dependen del escenario. No es lo mismo pedir ayuda para escribir código que usar IA en una decisión de alto impacto. Ese análisis queda fuera de nuestro alcance.</aside>
+  </section>
+
+  <!-- 8 · Hipótesis ==================================================== -->
+  <section class="slide" data-section="Objetivos e hipótesis" data-speaker="Rodrigo">
+    <p class="eyebrow">Hipótesis</p>
+    <h2>Cinco hipótesis, con dirección donde la literatura la permite</h2>
+    <table class="tabla rise">
+      <tr><th colspan="2">Hipótesis</th><th>Relación esperada</th><th>Tipo</th></tr>
+      <tr><td class="h">H1</td><td class="nombre">Exactitud</td><td class="rel">A mayor exactitud percibida, mayor confianza</td><td><span class="pill">Direccional (+)</span></td></tr>
+      <tr><td class="h">H2</td><td class="nombre">Explicabilidad</td><td class="rel">A mayor explicabilidad percibida, mayor confianza</td><td><span class="pill">Direccional (+)</span></td></tr>
+      <tr><td class="h">H3</td><td class="nombre">Conocimiento previo</td><td class="rel">El conocimiento previo se relaciona con la confianza</td><td><span class="pill nd">No direccional</span></td></tr>
+      <tr><td class="h">H4</td><td class="nombre">Reputación</td><td class="rel">A mejor reputación percibida, mayor confianza</td><td><span class="pill">Direccional (+)</span></td></tr>
+      <tr><td class="h">H5</td><td class="nombre">Comparación de grupos</td><td class="rel">Hay diferencias de confianza entre estudiantes y egresados</td><td><span class="pill nd">No direccional</span></td></tr>
+    </table>
+    <p class="nota rise" style="--i:2"><b>¿Por qué H3 no tiene dirección?</b> La familiaridad con la herramienta tiende a subir la confianza, pero la experiencia técnica lleva a apoyarse menos en la automatización (Hoff y Bashir, 2015).</p>
+    <aside class="notes" data-time="5:00 – 6:00">Planteamos cinco hipótesis. Esperamos que una mayor exactitud percibida, una mayor explicabilidad y una mejor reputación de la herramienta se relacionen positivamente con la confianza. Para el conocimiento previo no anticipamos una dirección: distinguimos la familiaridad con herramientas de IA de la experiencia en desarrollo de software, y la literatura sugiere que pueden relacionarse con la confianza de maneras distintas. También compararemos la confianza entre estudiantes y egresados, sin anticipar cuál grupo tendrá un nivel mayor. Ahora Juan Manuel va a contar cómo lo vamos a estudiar.</aside>
+  </section>
+
+  <!-- 9 · Enfoque y alcance ============================================ -->
+  <section class="slide alt" data-section="Diseño metodológico" data-speaker="Juan Manuel">
+    <p class="eyebrow">Diseño metodológico · Enfoque y alcance</p>
+    <h2>Un estudio cuantitativo, correlacional y transversal</h2>
+    <div class="specs">
+      <div class="rise" style="--i:0"><p class="tag">Enfoque</p><h3>Cuantitativo</h3><p class="txt sm">Mide la confianza y los factores con escalas estandarizadas y los analiza estadísticamente.</p></div>
+      <div class="foco rise" style="--i:1"><p class="tag">Alcance</p><h3>Correlacional</h3><p class="txt sm">Con un componente descriptivo (OE1) y uno comparativo (OE3).</p></div>
+      <div class="rise" style="--i:2"><p class="tag">Diseño</p><h3>No experimental</h3><p class="txt sm">Las variables se observan como se dan, sin manipularlas.</p></div>
+      <div class="rise" style="--i:3"><p class="tag">Temporalidad</p><h3>Transversal</h3><p class="txt sm">Una sola aplicación del cuestionario.</p></div>
+    </div>
+    <div class="porque rise" style="--i:5">
+      <p class="q">¿Por qué no explicativo?</p>
+      <p>Para hablar de causas habría que manipular los factores en un experimento. Por eso los resultados se interpretan como asociaciones, y el título dice «asociados».</p>
+    </div>
+    <p class="source">Mismo tipo de diseño que los antecedentes: encuestas transversales a estudiantes y desarrolladores</p>
+    <aside class="notes" data-time="6:00 – 6:45">El enfoque es cuantitativo, porque queremos medir la confianza y los factores con escalas estandarizadas y analizar la relación entre ellos estadísticamente. El alcance es correlacional, con una parte descriptiva y una comparativa. El diseño es no experimental, porque no manipulamos nada, y transversal, porque se mide una sola vez. No es explicativo porque para afirmar causas habría que hacer un experimento; por eso hablamos siempre de asociación. Es el mismo tipo de diseño que usaron los antecedentes más cercanos.</aside>
+  </section>
+
+  <!-- 10 · Población y muestra ========================================= -->
+  <section class="slide" data-section="Diseño metodológico" data-speaker="Juan Manuel">
+    <p class="eyebrow">Diseño metodológico · Fuentes de datos</p>
+    <h2>Población y muestra</h2>
+    <div class="dos">
+      <div class="defs">
+        <div class="rise" style="--i:0"><p class="tag">Población</p><p>Estudiantes y egresados de carreras de Sistemas en Uruguay que usan asistentes de IA generativa al menos una vez por semana.</p></div>
+        <div class="rise" style="--i:1"><p class="tag">Unidad de análisis y de observación</p><p>El usuario individual, que responde su propio cuestionario.</p></div>
+        <div class="rise" style="--i:2"><p class="tag">Muestreo no probabilístico</p><p>Por conveniencia y bola de nieve, porque no existe un registro de toda la población.</p></div>
+      </div>
+      <div class="muestra rise" style="--i:3">
+        <p class="tag">Tamaño de la muestra</p>
+        <p class="n">200</p>
+        <p>respuestas válidas como mínimo, unas 100 por grupo.</p>
+        <div class="grupos"><div class="a">Estudiantes · 100</div><div class="b">Egresados · 100</div></div>
+        <p class="ref">Los antecedentes usaron entre 238 y 435.</p>
+      </div>
+    </div>
+    <p class="source">Límite declarado: no se puede generalizar con margen de error conocido y puede haber sesgo de autoselección</p>
+    <aside class="notes" data-time="6:45 – 7:35">La fuente de datos son las propias personas. La población son estudiantes y egresados de Sistemas en Uruguay que usan asistentes de IA al menos una vez por semana; incluimos a los dos grupos porque eso da variación real en el conocimiento previo. Como no hay un registro de toda esa población, el muestreo es no probabilístico, por conveniencia y bola de nieve, a través de grupos de estudiantes, docentes y comunidades de desarrolladores. Buscamos al menos 200 respuestas, unas 100 por grupo, tomando como referencia los antecedentes. Esto tiene un límite que declaramos: no podemos generalizar a toda la población y puede haber sesgo de autoselección.</aside>
+  </section>
+
+  <!-- 11 · Instrumento ================================================= -->
+  <section class="slide alt" data-section="Diseño metodológico" data-speaker="Juan Manuel">
+    <p class="eyebrow">Diseño metodológico · Instrumento</p>
+    <h2>Cuestionario Trust in Automation (TiA), adaptado</h2>
+    <div class="inst">
+      <div class="stats rise">
+        <div><span class="v">19</span><p>ítems en escala Likert de 1 a 5</p></div>
+        <div><span class="v">6</span><p>subescalas</p></div>
+        <div><span class="v s">0,77–0,95</span><p>consistencia interna: instrumento validado</p></div>
+        <div><span class="v s">2024</span><p>ya se usó con estudiantes e IA generativa (Amoozadeh et al.)</p></div>
+      </div>
+      <table class="mapa rise" style="--i:2">
+        <tr><th>Subescala del TiA</th><th></th><th>Variable del estudio</th></tr>
+        <tr class="dep"><td class="sub">Trust in Automation (2)</td><td class="fl">→</td><td class="var">Confianza (dependiente)</td></tr>
+        <tr><td class="sub">Reliability/Competence (6)</td><td class="fl">→</td><td class="var">Exactitud percibida</td></tr>
+        <tr><td class="sub">Understanding/Predictability (4)</td><td class="fl">→</td><td class="var">Explicabilidad percibida</td></tr>
+        <tr><td class="sub">Familiarity (2) + experiencia</td><td class="fl">→</td><td class="var">Conocimiento previo</td></tr>
+        <tr><td class="sub">Intention of Developers (2) + 3 ítems propios</td><td class="fl">→</td><td class="var">Reputación percibida</td></tr>
+        <tr><td class="sub">Propensity to Trust (3)</td><td class="fl">→</td><td class="var">Control</td></tr>
+      </table>
+    </div>
+    <p class="source">Körber (2019) · licencia CC BY-SA 4.0, que permite adaptarlo</p>
+    <aside class="notes" data-time="7:35 – 8:25">Para no inventar una escala de confianza usamos un cuestionario validado: el Trust in Automation de Körber. Tiene 19 afirmaciones que se responden de 1 a 5 y se agrupan en seis subescalas, con buena consistencia interna. Amoozadeh ya lo usó con estudiantes e IA generativa. Cada subescala corresponde a una variable nuestra, como muestra la tabla. La única que no cubría del todo era la reputación: la subescala habla de la intención de los desarrolladores, así que le sumamos tres ítems propios sobre cómo se valora la herramienta en la comunidad, que se validan en la prueba piloto. El conocimiento previo se complementa con preguntas sobre experiencia.</aside>
+  </section>
+
+  <!-- 12 · Recolección ================================================= -->
+  <section class="slide" data-section="Diseño metodológico" data-speaker="Juan Manuel">
+    <p class="eyebrow">Diseño metodológico · Procedimiento de recolección</p>
+    <h2>De la adaptación del cuestionario a los datos codificados</h2>
+    <div class="pasos">
+      <div class="paso rise" style="--i:0"><span class="n">1</span><h3>Adaptación</h3><p>Traducción y retrotraducción al inglés.</p></div>
+      <div class="paso rise" style="--i:1"><span class="n">2</span><h3>Revisión</h3><p>Dos docentes evalúan claridad y pertinencia.</p></div>
+      <div class="paso rise" style="--i:2"><span class="n">3</span><h3>Piloto</h3><p>10 a 15 personas; se arma la versión final.</p></div>
+      <div class="paso foco rise" style="--i:3"><span class="n">4</span><h3>Aplicación</h3><p>Formulario en línea, cuatro semanas, una sola vez.</p></div>
+      <div class="paso rise" style="--i:4"><span class="n">5</span><h3>Codificación</h3><p>Libro de códigos; ítems inversos recodificados.</p></div>
+    </div>
+    <div class="analisis rise" style="--i:6">
+      <p class="tag">Análisis previsto</p>
+      <div class="grid">
+        <div><span class="k">Confiabilidad</span><p>Alfa de Cronbach</p></div>
+        <div><span class="k">H1 a H4</span><p>Spearman y regresión lineal múltiple</p></div>
+        <div><span class="k">H5</span><p>t de Student o U de Mann-Whitney</p></div>
+        <div><span class="k">Criterio</span><p>Significación de 0,05 y tamaño del efecto</p></div>
+      </div>
+    </div>
+    <p class="source">Cuestionario anónimo, con consentimiento informado en la primera pantalla</p>
+    <aside class="notes" data-time="8:25 – 9:15">El procedimiento tiene cinco pasos. Primero adaptamos el cuestionario: lo traducimos al español y hacemos una retrotraducción al inglés para controlar que no cambie el sentido. Después lo revisan dos docentes, y hacemos una prueba piloto con 10 a 15 personas que no entran en la muestra final. Con eso armamos la versión definitiva, que se aplica en línea durante cuatro semanas; cada persona responde una sola vez. Al final las respuestas se codifican con un libro de códigos, recodificando los ítems inversos. Para el análisis usamos correlación de Spearman y regresión múltiple para las hipótesis de los factores, y una prueba t o Mann-Whitney para comparar estudiantes y egresados.</aside>
+  </section>
+
+  <!-- 13 · Cierre ====================================================== -->
+  <section class="slide dark cierre" data-section="Diseño metodológico" data-speaker="Juan Manuel">
+    <p class="eyebrow rise">En síntesis</p>
+    <div class="sintesis">
+      <div class="rise" style="--i:1"><span class="tag">Qué</span><p>La confianza de estudiantes y egresados de Sistemas en Uruguay en los asistentes de IA generativa.</p></div>
+      <div class="rise" style="--i:2"><span class="tag">Cómo</span><p>Un estudio cuantitativo y correlacional, con una encuesta basada en un cuestionario validado.</p></div>
+      <div class="rise" style="--i:3"><span class="tag">Para qué</span><p>Saber qué se asocia con esa confianza, para ayudar a calibrarla en la formación y en el trabajo.</p></div>
+    </div>
+    <div class="grow"></div>
+    <p class="gracias rise" style="--i:5">Gracias.</p>
+    <aside class="notes" data-time="9:15 – 9:30">Para cerrar: estudiamos la confianza de estudiantes y egresados de Sistemas en Uruguay en los asistentes de IA generativa, con un estudio cuantitativo y correlacional basado en un cuestionario validado, para entender qué se asocia con esa confianza y poder ayudar a calibrarla. Muchas gracias; quedamos a disposición para las preguntas.</aside>
+  </section>
+
+</main>
+
+<div class="ayuda" id="ayuda">← → cambiar · P notas del orador · F pantalla completa</div>
+
+<script src="deck.js"></script>
+</body>
+</html>

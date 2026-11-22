@@ -1,0 +1,4 @@
+Tipografías incluidas (todas con licencia SIL Open Font License 1.1):
+- Newsreader — Production Type — https://github.com/productiontype/Newsreader
+- IBM Plex Sans e IBM Plex Mono — IBM — https://github.com/IBM/plex
+Archivos tomados de los paquetes @fontsource.
